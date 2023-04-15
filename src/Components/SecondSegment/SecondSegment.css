@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Noto+Sans&display=swap');
+
+.Segment{
+  
+}
+.mainCont{
+    display: flex;
+    justify-content: space-evenly;
+    user-select: none;
+    padding-inline: 0;
+    
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+   
+   
+}
+.left{
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+}
+
+#img{
+   border-radius: 20px 20px 20px 20px;
+    height: 600px;
+}
+
+.right{
+    align-self: flex-end;
+}
+.TitleS{
+    color: rgb(30, 44, 83);
+    font-size: 45px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    
+}
+
+#subTitleS{
+    color: rgba(19, 27, 49 , 0.7);
+    font-size: 16px;
+    color: #213360;
+    font-family: 'Noto Sans', sans-serif;
+    border-left: 2px solid rgb(30, 44, 83);
+    padding-left: 20px;
+    font-weight: 600;
+    
+}
+
+#Stext{
+    font-family: 'Noto Sans', sans-serif;
+    padding-left: 20px;
+    color: #213360;
+   
+}
+
+.MeetBtn{
+    border: 2px solid rgb(32, 198, 186);
+    height: 50px;
+    width: 190px;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(32, 198, 186);
+    background: transparent;
+}
+
+.MeetBtn:hover{
+   background-color: rgb(32, 198, 186);
+   color: white;
+   transition: .4s ease-in-out;
+}
+
+
+@media(max-width:390px){
+     
+    .mainCont{
+     
+        flex-direction: column;
+        margin-left:25px;
+
+     }
+     .TitleS{
+        font-size: 6vw;
+     }
+     #subTitleS{
+        font-size: 3.5vw;
+        padding-left: 10px;
+     }
+     #Stext{
+        font-size: 3vw;
+        padding-left: 10px;
+     }
+     .left{
+        width: 95vw;
+     }
+ 
+     .right{
+        align-self: normal;
+     }
+    #img{
+        height: 130px;
+     }
+}
+/* Extra Small Devices (less than 576px) */
+@media (max-width: 575.98px ) and (min-width: 390px) {
+    
+
+     
+     .mainCont{
+        flex-direction: column;
+        margin-left: 15px;
+     }
+     .TitleS{
+      font-size: 6vw;
+   }
+   #subTitleS{
+      font-size: 4vw;
+      padding-left: 10px;
+   }
+   #Stext{
+      font-size: 3vw;
+      padding-left: 10px;
+   }
+     .left{
+        width: 95vw;
+     }
+     #img{
+        height: 300px;
+     }
+     .right{
+        align-self: normal;
+     }
+  
+  }
+  
+  /* Small Devices (576px - 767px) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .mainCont{
+        flex-direction: column;
+        margin-left: 20px;
+     }
+     .TitleS{
+        font-size: 45px;
+     }
+   
+    
+     .left{
+        width: 95vw;
+     }
+     #img{
+        height: 400px;
+     }
+     .right{
+        align-self: normal;
+     }
+
+  }
+  
+  /* Medium Devices (768px - 991px) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+     
+    .mainCont{
+        flex-direction: column;
+        margin-left: 20px;
+        
+     }
+     .TitleS{
+        font-size: 45px;
+     }
+   
+    
+     .left{
+        width: 95vw;
+     }
+     #img{
+        height: 400px;
+     }
+     .right{
+        align-self: normal;
+     }
+
+  
+  }
+  
+  /* Large Devices (992px - 1199px) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .mainCont{
+        padding-top: 20px;
+    }
+  
+
+  }
+  @media (max-width: 1350px) {
+    .mainCont{
+        padding-top: 20px;
+      
+     }
+  
+  }
+  
+  /* Extra Large Devices (1200px and higher) */
+  @media (min-width: 1200px) {
+     
+    .mainCont{
+        padding-top: 20px;
+        
+     }
+  }
+  
