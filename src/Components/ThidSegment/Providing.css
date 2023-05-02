@@ -3,11 +3,12 @@
     height: 100%;
     width: 100vw;
  background-size: cover;
-    background-image: url('../Assests/Background/2.jpg');
+    background-image: url('../../Assests/Background/2.jpg');
    user-select: none;
 }
+
 .ThirdCont{
-   
+   padding:0;
     display: flex;
     gap: 40px;
     flex-direction: column;
@@ -17,9 +18,9 @@
 }
 .ContInfo{
    
-    padding:10px;
     
     
+    width: 100%;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
@@ -34,13 +35,8 @@
 
 #ProvideTitle{
     justify-self:flex-start;
- 
     
-    color: #0e204d;
-    font-family: Quicksand, sans-serif;
-    text-transform: capitalize;
-    font-weight: 700;
-    font-size: 37px;
+    width: 80%;
 }
 
 #ProvideSub{
@@ -59,7 +55,7 @@
 }
 
 
-#btn{
+#btn2{
     border: none;
     font-family: 'Schibsted Grotesk', sans-serif;
     outline: none;
@@ -72,10 +68,11 @@
     position: relative;
     overflow: hidden;
     z-index:1;
-    margin: 0;
+    padding-inline:0;
+    margin-left: 0;
 }
 
-#btn:before{
+#btn2:before{
     content: "";
     position: absolute;
     left: 0;
@@ -92,7 +89,7 @@
 }
 
 
-#btn:hover::before {
+#btn2:hover::before {
     transform: scaleX(1);
   }
 
@@ -139,7 +136,16 @@
   .icon-background {
     animation: fade-out 0.3s ease-in-out;
   }
-  
+
+  .Cards{
+    
+  }
+  .row{
+    
+    width: 100%;
+  }
+
+ 
   .icon{
     height: 60px;
    
@@ -188,10 +194,10 @@
     /* CSS styles to be applied */
     .ContInfo{
       flex-direction: column;
-      margin-left: 5px;
+     
   }
   .ThirdCont{
-    margin-left: 5PX;
+   
     width: 90vw;
     padding: 0;
   }
@@ -206,7 +212,7 @@
   .row{
     display: flex;
     flex-wrap: wrap;
-    width: 90vw;
+    
     margin-left: 5PX;
 
     
@@ -227,7 +233,7 @@
   }
   .Providetext{
     width: 80vw;
-    margin-left: auto;
+    
 
   }
 
@@ -243,7 +249,7 @@
   }
 
   .ThirdCont{
-    margin-left: 5PX;
+   
     width: 100vw;
   }
 
@@ -257,7 +263,7 @@
   .row{
     display: flex;
     flex-wrap: wrap;
-    width: 90vw;
+  
     margin-left: 5PX;
   }
 
@@ -285,13 +291,11 @@
     }
 
     .ThirdCont{
-      margin-left: 5PX;
+     
       width: 100vw;
     }
 
-    #ProvideTitle{
-      width: 100vw;
-    }
+ 
 
     #ProvideSub{
       width: 80vw;
@@ -301,7 +305,7 @@
       display: flex;
       flex-wrap: wrap;
       margin-left: 5px;
-      width: 90vw;
+     
     
       
     }

@@ -2,5 +2,7 @@
   height: 100vh;
   width: 100vw;
   scroll-behavior: smooth;
-  
+  overflow-x: hidden;
+  user-select: none;
 }
+

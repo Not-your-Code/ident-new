@@ -13,7 +13,7 @@ export default function HealthCare() {
                    
                 <div className='CareLeft'>
                     <div id="CareSubtitle">
-                    We Provide All Aspects Of Medical Practice For Your Whole Family!
+                   <h2 className='titles FourthTitle'>We Provide All Aspects Of Medical Practice For Your Whole Family!</h2> 
                     </div>
                 
                     <div className='CareRight'>
@@ -55,21 +55,14 @@ export default function HealthCare() {
                  
                 </div>
                </div>
-           <div className='CareBottom'>
-            <div id='CareHosImg'>
-            <img src={require('../Assests/logo/alert.png')} id='image'/>
-            </div>
-            <div id="CareText">
-                
-                <div id='title1'>True HealthCare For Your Family</div>
-                <div id='subTitle1'>
-                Serve the community by improving the quality of life through better health. We have
-                put protocols to protect our patients and staff while continuing to provide medically necessary care.
-              </div>
-             
-            </div>
-            <button id='btn'>new button</button>
-           </div>
+               <div className='Providetext'>
+        <p id="textProvide"> Serve the community by improving the quality of life through better health.
+           We have put protocols to protect our patients and  staff while continuing to provide medically necessary care
+          
+           </p>
+           <button id="btn">Book Appointment</button>
+       </div>
+      
          </div>
     </div>
   )

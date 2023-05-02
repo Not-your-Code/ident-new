@@ -8,7 +8,7 @@ export default function Providing() {
       <div className='container ThirdCont'>
         <div className='backImg ContInfo'>
             <div id='ProvideTitle'>
-             <p>Providing Care For The Sickest In Community.</p> 
+             <h2 className='titles'>Providing Care For The Sickest In Community.</h2> 
             </div>
             <div id='leftInfo'>
                 <div id='ProvideSub'>
@@ -17,7 +17,7 @@ export default function Providing() {
                         actively participates in numerous initiatives aimed at creating sustainable change
                          for patients!</p>
                     <div id='buttons'>
-                    <button id="btn">Book Appointment</button>
+                    <button id="btn2">Book Appointment</button>
                     
                     </div>
                 </div>
@@ -88,13 +88,13 @@ export default function Providing() {
         </div>
 
        </div>
-       <div className='Providetext'>
-        <p> Serve the community by improving the quality of life through better health.
-           We have put protocols to protect our patients and  staff while continuing to provide medically necessary care
-          
-           </p>
-           <p id='contact'>Contact For More </p>
-       </div>
+        <div className='Providetext'>
+          <p> Serve the community by improving the quality of life through better health.
+            We have put protocols to protect our patients and  staff while continuing to provide medically necessary care
+            
+            </p>
+            <p id='contact'>Contact For More </p>
+        </div>
       </div>
        
     </div>

@@ -6,7 +6,7 @@ export default function Footer() {
         <div className='container Cont'>
             <div className='FootRight'>
               <div id='image1'>
-                <img src={require('../Assests/logo/logo-light.png')}/>
+                <img src={require('../../../Assests/logo/logo-light.png')}/>
               </div>
               <div id='textFoot'>
               Our goal is to deliver quality of care in a courteous, respectful, and compassionate manner. 
@@ -36,9 +36,7 @@ export default function Footer() {
                 </div>
                 </div>
                 <div className='FootLeft'>
-                  <div id="footCard">
-                    card
-                   </div>
+                
                 </div>
         </div>
     </div>

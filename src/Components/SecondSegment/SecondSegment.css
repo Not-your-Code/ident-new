@@ -1,24 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Noto+Sans&display=swap');
 
 .Segment{
-  
+  height: 100%;
+ 
+  width: 100%;
 }
 .mainCont{
     display: flex;
+    
     justify-content: space-evenly;
     user-select: none;
     padding-inline: 0;
-    
+  
+ margin-top: 20px;
+ margin-bottom: 20px;
     gap: 20px;
-    padding-bottom: 20px;
-    margin-top: 30px;
+
    
+}
+
+.TitleS{
    
+   width: 80%;
 }
 .left{
      display: flex;
      flex-direction: column;
      gap: 30px;
+     width: 100%;
 }
 
 #img{
@@ -29,13 +38,7 @@
 .right{
     align-self: flex-end;
 }
-.TitleS{
-    color: rgb(30, 44, 83);
-    font-size: 45px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    
-}
+
 
 #subTitleS{
     color: rgba(19, 27, 49 , 0.7);
@@ -52,6 +55,8 @@
     font-family: 'Noto Sans', sans-serif;
     padding-left: 20px;
     color: #213360;
+   
+    width: 80%;
    
 }
 
@@ -79,12 +84,10 @@
     .mainCont{
      
         flex-direction: column;
-        margin-left:25px;
+       
 
      }
-     .TitleS{
-        font-size: 6vw;
-     }
+ 
      #subTitleS{
         font-size: 3.5vw;
         padding-left: 10px;
@@ -103,19 +106,24 @@
     #img{
         height: 130px;
      }
+     .TitleS{
+    
+      width: 100%;
+     }
 }
 /* Extra Small Devices (less than 576px) */
 @media (max-width: 575.98px ) and (min-width: 390px) {
     
 
-     
+     .TitleS{
+   
+      width: 98%;
+     }
      .mainCont{
         flex-direction: column;
-        margin-left: 15px;
+       
      }
-     .TitleS{
-      font-size: 6vw;
-   }
+ 
    #subTitleS{
       font-size: 4vw;
       padding-left: 10px;
@@ -140,11 +148,9 @@
   @media (min-width: 576px) and (max-width: 767.98px) {
     .mainCont{
         flex-direction: column;
-        margin-left: 20px;
+    
      }
-     .TitleS{
-        font-size: 45px;
-     }
+  
    
     
      .left{
@@ -164,13 +170,10 @@
      
     .mainCont{
         flex-direction: column;
-        margin-left: 20px;
+        
         
      }
-     .TitleS{
-        font-size: 45px;
-     }
-   
+
     
      .left{
         width: 95vw;

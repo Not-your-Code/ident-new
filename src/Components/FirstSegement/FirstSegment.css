@@ -5,11 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 @font-face {
     font-family: 'Volkswagen Serial Bold';
-    src: url('../Assests/fonts/volkswagen-serial-bold.ttf') format('truetype');
+    src: url('../../Assests/fonts/volkswagen-serial-bold.ttf') format('truetype');
   }
   @font-face {
     font-family: 'Icomoon';
-    src: url('../Assests//fonts/icomoon.ttf') format('truetype');
+    src: url('../../Assests/fonts/icomoon.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -20,21 +20,22 @@
 
 
 .intro{
+  
     padding: 0;
 }
 
 
 .Introduction{
-    background-image: url('../Assests/sliders/2.jpg');
+    background-image: url('../../Assests/sliders/2.jpg');
     background-size: cover;
     height: 80vh;
+    width: 100%;
 
     display: flex;
     align-items: center;
 }
 
 #MainTitleDiv{
-   
     width: 70vw;
 }
 
@@ -42,6 +43,8 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 #SubTitleIntro{
@@ -52,14 +55,17 @@
     font-weight: 700;
 }
 
-#MainTitleDiv{
-    
-    width: 60vw;
-    overflow: hidden;
-   
+#SubTitleDiv{
+    border: 1px solid red;
+    width: 600px;
+    padding-left: 0;
+    color: #213360;
 }
-
-#MainTitleIntro{
+h3{
+    text-align: start;
+    margin: 0;
+}
+/* #MainTitleIntro{
     
     font-family: 'Quicksand', sans-serif;
     font-size: 5rem;
@@ -67,7 +73,7 @@
     overflow: hidden;
    
     color: #0e204d;
-}
+} */
 
 #TextIntro{
     color: #283b6a;
@@ -92,22 +98,16 @@
    
       
       .intro{
-        margin: 25px;
+       
         width: 90vw;
       }
       .buttonsDiv{
         
         width: 80vw;
       }
-       #SubTitleIntro{
-        font-size: 4vw;
-       }
-       #MainTitleIntro{
-        font-size: 8vw;
-       }
-       #TextIntro{
-        font-size: 3vw;
-       }
+      
+    
+     
        .buttonIntro{ 
         width: 60px;
         font-size: 12px;
@@ -118,22 +118,14 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
     
     .intro{
-        margin-left: 25px;
+       
         width: 90vw;
       }
       .buttonsDiv{
         
         width: 80vw;
       }
-       #SubTitleIntro{
-        font-size: 2vw;
-       }
-       #MainTitleIntro{
-        font-size: 4vw;
-       }
-       #TextIntro{
-        font-size: 2vw;
-       }
+      
        .buttonIntro{ 
      
         font-size: 3vw;
@@ -142,22 +134,14 @@
 }
 @media (min-width: 768px) and (max-width: 999.98px) {
     .intro{
-        margin-left: 25px;
+      
         width: 90vw;
       }
       .buttonsDiv{
         
         width: 80vw;
       }
-       #SubTitleIntro{
-        font-size: 1.1rem;
-       }
-       #MainTitleIntro{
-        font-size: 3rem;
-       }
-       #TextIntro{
-        font-size: 1rem;
-       }
+     
        .buttonIntro{ 
      
         font-size: 12px;

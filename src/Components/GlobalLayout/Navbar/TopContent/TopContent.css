@@ -5,6 +5,7 @@
     padding-inline: 40px;
     padding-top: 10px;
     display: visible;
+    width: 100%;
     color: rgb(255, 255, 255);
 }
 #title{

@@ -23,12 +23,12 @@
     width:100vw;
 }
 .meet{
-    padding: var(--paddingXl);
+    padding: 0;
     display: flex;
     flex-direction: column;
     width: 100vw;
     gap: 40px;
-    border-bottom: 1px solid var(--bodyColor);
+   
 }
 #MeetTitle{
     display: flex;
@@ -59,19 +59,28 @@ h3{
    
     justify-content: space-between;
     
+    
 }
 #Doctor_img{
     border-radius: 20px 20px 0px 0px;
     width: 100%;
+    
 }
 .CardDoctor{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity .8s ease, transform .8s ease;
     cursor:pointer;
     background-color: white;
     width: 29%;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.5s ease-in-out;
+
     border-radius: 20px;
 }
+.fadeIn .CardDoctor {
+    opacity: 1;
+    transform: translateY(0);
+  }
 #AboutDoctor{
     padding: 10px;
   
@@ -135,9 +144,9 @@ h5{
    border: none;
    font-family: 'Schibsted Grotesk' , sans-serif;
    outline: none;
-   background-color: var(--MainColor);
-   color: white;
- 
+  
+   color: var(--MainColor);
+   background-color: white ;
    border-radius: 30px;
    cursor: pointer;
    position: relative;
@@ -155,6 +164,7 @@ h5{
     width: 100%;
     height: 100%;
     background-color: var(--lighGreen);
+    
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s linear;
@@ -167,6 +177,8 @@ h5{
 
 .readBtn:hover::before {
     transform: scaleX(1);
+
+ 
   }
 
 .CardDoctor:hover{
@@ -180,10 +192,7 @@ h5{
 
 
     @media (min-width: 992px) and (max-width: 1200px) {
-        .meet{
-            padding-left: var(--marginLeftXss);
-            padding-right: var(--marginLeftXss);
-        }
+      
         h1{
             font-size: 20px;
         }
@@ -214,10 +223,7 @@ h5{
 /* // Medium Screens */
 
     @media (min-width: 768px) and (max-width: 991px) {
-        .meet{
-            padding-left: var(--marginLeftXss);
-            padding-right: var(--marginLeftXss);
-        }
+     
         h1{
             font-size: 20px;
         }
@@ -250,10 +256,7 @@ h5{
 // Small Screens */
 
     @media (min-width: 576px) and (max-width: 767px) {
-        .meet{
-            padding-left: var(--marginLeftXss);
-            padding-right: var(--marginLeftXss);
-        }
+        
         h1{
             font-size: 20px;
         }
@@ -287,10 +290,7 @@ h5{
 /* // Extra Small Screens */
 
     @media (min-width: 320px) and (max-width: 575px) {
-        .meet{
-            padding-left: var(--marginLeftXss);
-            padding-right: var(--marginLeftXss);
-        }
+       
         h1{
             font-size: 20px;
         }
@@ -298,9 +298,11 @@ h5{
             text-align: center;
             font-size: .8rem;
         }
-       
+      
         .CardDoctor{
-            width: 100%;
+            width: 80%;
+            margin: auto;
+            
         }
       
         .Card1{
